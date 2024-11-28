@@ -786,3 +786,18 @@ img
   }
 }
 
+/* Mobile Styling Adjustments */
+@media screen and (max-width: 788px) {
+  .designed-credits-bottom {
+    text-align: center; /* Ensure the text is centered on mobile */
+  }
+
+  .designed-credits-bottom p {
+    line-height: 1.5; /* Adjust spacing between lines */
+  }
+
+  .designed-credits-bottom a:nth-child(2)::before {
+    content: "\a"; /* Insert a line break before Meet Buddhadevv */
+    white-space: pre; /* Ensure the line break is properly rendered */
+  }
+}
