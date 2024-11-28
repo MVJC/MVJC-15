@@ -762,6 +762,20 @@ img
     right: 10px; /* Moves it to the right */
     text-align: right; /* Aligns text to the right on desktop */
     font-size: 1rem; /* Slightly larger text */
+    color: white; /* White color for text */
+    white-space: nowrap; /* Prevents line breaks, keeps text on a single line */
+  }
+
+  .designed-credits-bottom a {
+    color: white; /* White color for the links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    margin-left: 5px; /* Space between names */
+  }
+
+  .designed-credits-bottom a:hover {
+    color: orange; /* Orange color on hover */
+    text-decoration: underline; /* Underline on hover */
   }
 
   .extras-content {
@@ -772,15 +786,27 @@ img
 /* Mobile Styling Adjustments */
 @media screen and (max-width: 788px) {
   .designed-credits-bottom {
-    text-align: center; /* Ensure the text is centered on mobile */
+    text-align: center; /* Center-align the text on mobile */
   }
 
   .designed-credits-bottom p {
-    line-height: 1.5; /* Adjust spacing between lines */
+    line-height: 1.5; /* Adjust line-height for mobile */
   }
 
   .designed-credits-bottom a:nth-child(2)::before {
     content: "\a"; /* Insert a line break before Meet Buddhadevv */
     white-space: pre; /* Ensure the line break is properly rendered */
+  }
+
+  /* Mobile links */
+  .designed-credits-bottom a {
+    color: white; /* White color for mobile links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+  }
+
+  .designed-credits-bottom a:hover {
+    color: orange; /* Orange on hover in mobile */
+    text-decoration: underline; /* Underline on hover */
   }
 }
