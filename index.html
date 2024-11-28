@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MVJC Webinar Booking</title>
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 </head>
-
 <body>
 	<!-- Top bar starts -->
 	<div class="top-bar">
@@ -17,72 +15,67 @@
 	</div>
 	<!-- Top bar ends -->
 
-	<!-- Header section starts -->
-	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col header-content">
-					<h3 class="subheading">
-						Welcome to MVJC
-					</h3>
-					<h2 class="main-heading">
-						Enhance Your Skills with Our <span>Expert-Led Webinar</span>
-					</h2>
-					<div class="inner-row">
-						<div class="col">
-							<h3 class="date">
-								<i class='bx bx-calendar'></i> 15th December 2024
-							</h3>
-						</div>
-						<div class="col">
-							<h3 class="time">
-								<i class='bx bxs-hourglass-top'></i> 5:00 PM
-							</h3>
-						</div>
-					</div>
-					<p class="para-line white">
-						Join us for an engaging webinar hosted by industry experts. Learn new skills, enhance your knowledge, and connect with like-minded professionals.
-					</p>
-				</div>
-				<div class="col header-form">
-					<div class="form-area">
-						<h2 class="form-heading">
-							Register Now
-						</h2>
-						<hr>
-						<form action="#" class="booking-form">
-							<div class="form-row">
-								<div class="col">
-									<div class="input-field">
-										<label for="firstName">First Name</label>
-										<input type="text" id="firstName">
-									</div>
-								</div>
-								<div class="col">
-									<div class="input-field">
-										<label for="lastName">Last Name</label>
-										<input type="text" id="lastName">
-									</div>
-								</div>
-							</div>
-							<div class="input-field">
-								<label for="emailId">Email Address</label>
-								<input type="email" id="emailId">
-							</div>
-							<div class="input-field">
-								<button class="btn">
-									<a href="thankyou.html">
-										Register
-									</a>
-								</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Header section ends -->
+<!-- Header section starts -->
+<section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col header-content">
+                <h3 class="subheading">
+                    Welcome to MVJC
+                </h3>
+                <h2 class="main-heading">
+                    Enhance Your Skills with Our <span>Expert-Led Webinar</span>
+                </h2>
+                <div class="inner-row">
+                    <div class="col">
+                        <h3 class="date">
+                            <i class='bx bx-calendar'></i> 15th December 2024
+                        </h3>
+                    </div>
+                    <div class="col">
+                        <h3 class="time">
+                            <i class='bx bxs-hourglass-top'></i> 5:00 PM
+                        </h3>
+                    </div>
+                </div>
+                <p class="para-line white">
+                    Join us for an engaging webinar hosted by industry experts. Learn new skills, enhance your knowledge, and connect with like-minded professionals.
+                </p>
+            </div>
+            <div class="col header-form">
+                <div class="form-area">
+                    <h2 class="form-heading">
+                        Register Now
+                    </h2>
+                    <hr>
+
+                    <!-- Timer Section -->
+                    <div class="timer">
+                        <div id="countdown">
+                            <div id="minutes">05</div> :
+                            <div id="seconds">00</div>
+                        </div>
+                        <p>Time Remaining</p>
+                    </div>
+
+                    <!-- Register Button Section -->
+                    <div class="input-field">
+                        <button class="btn" id="registerButton" disabled>
+                            <a href="https://pages.razorpay.com/pl_PNklbeSooTW89E/view" target="_blank" style="text-decoration: none; color: white;">
+                                Register
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Link to the external JavaScript file -->
+<script src="script.js"></script>
+<!-- Header section ends -->
+
+
 
 	<!-- Topics Covered section starts -->
 	<section class="topics">
@@ -180,17 +173,62 @@
 			</a>
 		</button>
 
-		<!-- Developer credits -->
-		<div class="developer-credits">
-			<p>
-				Developed by 
-				<a href="https://www.linkedin.com/in/chinmay-khatu-465863334/" class="developer-link">Chinmay Khatu</a> & 
-				<a href="https://www.linkedin.com/in/meet-akshay-buddhadevv-48b052247/" target="_blank" class="developer-link">Meet Buddhadevv</a>
-			</p>
-		</div>
-	</div>
+			</div>
 </section>
 <!-- Footer section ends -->
+
+
+<div class="extras-content">
+	<img src="img/host.png" alt="Host Image" class="host-img">
+
+	<h3 class="heading">
+		MVJC MEDIA
+	</h3>
+
+	<p class="para-line tagline">
+		"We turn your dreams into reality!"
+	</p>
+
+	<button class="btn">
+		<a href="https://wa.me/919699184767">
+			Join the community
+		</a>
+	</button>
+
+	<div class="separator"></div>
+
+	<h3 class="heading">Invite your friends</h3>
+
+	<div class="social-media">
+    <!-- Existing social media icons -->
+    <a href="https://www.facebook.com/YourPage" target="_blank">
+        <i class='bx bxl-facebook-circle'></i>
+    </a>
+    <a href="https://www.instagram.com/YourProfile" target="_blank">
+        <i class='bx bxl-instagram'></i>
+    </a>
+    <a href="https://www.twitter.com/YourProfile" target="_blank">
+        <i class='bx bxl-twitter'></i> <!-- Twitter Icon -->
+    </a>
+    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+        <i class='bx bxl-linkedin-square'></i>
+    </a>
+</div>
+
+
+
+
+	<!-- Developer Credits in Bottom-Right -->
+	<div class="developer-credits-bottom">
+		<p>
+			Developed by 
+			<a href="https://www.linkedin.com/in/chinmay-khatu-465863334/" class="developer-link">Chinmay Khatu</a> & 
+			<a href="https://www.linkedin.com/in/meet-akshay-buddhadevv-48b052247/" target="_blank" class="developer-link">Meet Buddhadevv</a>
+		</p>
+	</div>
+</div>
+
+
 
 
 </body>
