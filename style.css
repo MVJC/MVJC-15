@@ -676,146 +676,113 @@ img
 }
 
 
+	/*----------- Footer section end ------------*/
+}
+
 /* Extras Content Styling */
 .extras-content {
-  position: relative;
-  background: #0b1f4d; /* Navy shade */
+  background: var(--secondary-color);
   padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  width: 100%; /* Ensure full-width background */
-  min-height: 100%; /* Ensure it fills the parent container */
-  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Host Image Styling */
 .extras-content .host-img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-/* Headings Styling */
+.extras-content .tagline {
+	color: #ffffff; /* Replace with your desired color */
+	
+}
+
+
 .extras-content .heading {
-  color: #f1c40f; /* Yellow */
+  color: var(--third-color);
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
 }
 
-/* Tagline Styling */
-.extras-content .tagline {
-  color: white;
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* Button Styling */
-.extras-content .btn {
-  background-color: #f9980f; /* Single color */
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content; /* Ensure it doesn't stretch unnecessarily */
-  margin: 1rem auto; /* Center the button horizontally */
-}
-
-.extras-content .btn a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.extras-content .btn a:hover {
-  background-color: #d07b0e; /* Slightly darker hover effect */
-}
-
-/* Separator Styling */
 .extras-content .separator {
-  border: 1px solid #f1c40f;
+  border: 1px solid var(--third-color);
   width: 60px;
   margin: 1.5rem 0;
 }
 
-/* Social Media Icons Styling */
-.social-media {
-  display: flex;
-  justify-content: center; /* Align icons in the center */
-  align-items: center; /* Ensure icons are vertically aligned */
-  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
-  gap: 1rem; /* Space between icons */
-  margin-top: 1rem;
-}
-
-.social-media a {
-  font-size: 2rem;
-  color: #ffffff;
+.social-media i {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+  cursor: pointer;
   transition: color 0.3s;
 }
 
-.social-media a:hover {
-  color: #f1c40f;
+.social-media i:hover {
+  color: var(--third-color);
 }
 
-/* Developer Credits Styling */
-.developer-credits-bottom {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  font-size: 0.9rem;
-  color: #f1c40f;
-  text-align: right;
-}
+/* Desktop Adjustments */
+@media screen and (min-width: 789px) {
+  .btn {
+    width: fit-content;
+    padding: 1rem 2rem;
+  }
 
-.developer-credits-bottom a {
-  color: #f1c40f;
-  text-decoration: none;
-  font-weight: 600;
-}
+  .container {
+    padding: 5rem;
+  }
 
-.developer-credits-bottom a:hover {
-  text-decoration: underline;
-}
+  .thanks-content .main-heading {
+    font-size: 3rem;
+  }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
+  .download-content,
+  .order-content {
+    padding: 2.4rem;
+  }
+
   .extras-content {
-    padding: 2rem 1rem; /* Adjust padding for smaller screens */
-    text-align: center; /* Center-align content */
-    background: #0b1f4d; /* Ensure the background color is consistent */
-  }
-
-  .extras-content .btn {
-    margin: 1rem auto; /* Center-align the button */
-    display: flex;
-    justify-content: center;
-  }
-
-  .social-media {
-    justify-content: center; /* Ensure icons are center-aligned */
-    gap: 1rem; /* Keep proper spacing between icons */
-    flex-direction: row; /* Ensure horizontal layout for mobile */
-  }
-
-  .social-media a {
-    font-size: 1.8rem; /* Slightly smaller icons for mobile */
-  }
-
-  .developer-credits-bottom {
-    position: static; /* Adjusted for mobile responsiveness */
-    margin-top: 1rem;
-    text-align: center;
-    color: #f1c40f;
+    padding: 6rem;
   }
 }
-	/*----------- Footer section end ------------*/
+
+/* Styling for Designed Credits */
+.designed-credits-bottom {
+  margin-top: 2rem; /* Add spacing from above elements */
+  font-size: 0.9rem;
+  color: var(--third-color); /* Matches the design scheme */
+  text-align: center; /* Default alignment for mobile */
 }
+
+.designed-credits-bottom a {
+  color: var(--third-color); /* Match color with design */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.designed-credits-bottom a:hover {
+  text-decoration: underline;
+  color: var(--primary-color); /* Hover color */
+}
+
+/* Desktop Styling Adjustments */
+@media screen and (min-width: 789px) {
+  .designed-credits-bottom {
+    position: absolute; /* Aligns to the parent container */
+    bottom: 10px; /* Positions it at the bottom */
+    right: 10px; /* Moves it to the right */
+    text-align: right; /* Aligns text to the right on desktop */
+    font-size: 1rem; /* Slightly larger text */
+  }
+
+  .extras-content {
+    position: relative; /* Needed for absolute positioning of credits */
+  }
+}
+
