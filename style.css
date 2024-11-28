@@ -752,24 +752,7 @@ img
   }
 }
 
-/* Styling for Designed Credits */
-.designed-credits-bottom {
-  margin-top: 2rem; /* Add spacing from above elements */
-  font-size: 0.9rem;
-  color: var(--third-color); /* Matches the design scheme */
-  text-align: center; /* Default alignment for mobile */
-}
 
-.designed-credits-bottom a {
-  color: var(--third-color); /* Match color with design */
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.designed-credits-bottom a:hover {
-  text-decoration: underline;
-  color: var(--primary-color); /* Hover color */
-}
 
 /* Desktop Styling Adjustments */
 @media screen and (min-width: 789px) {
