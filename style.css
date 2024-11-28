@@ -96,108 +96,117 @@ img
 
 
 /*---------- Header section start ----------*/
-.header
-{
-	background:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(49, 30, 3, 0.5)), url(img/webinar-booking.jpg);
-  	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
+.header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(49, 30, 3, 0.5)), url(img/webinar-booking.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.subheading
-{
-	color: var(--primary-color);
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-align: center;
+.subheading {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
 }
 
-.main-heading
-{
-	color: var(--third-color);
-	font-size: 2.2rem;
-	font-weight: 600;
-	line-height: 1.2;
-	text-align: center;
-	padding: 26px 0;
+.main-heading {
+    color: var(--third-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    padding: 26px 0;
 }
 
-.inner-row
-{
-	display: flex;
-	justify-content: space-around;
-	text-align: center;
+.inner-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
-.inner-row .col .date, .inner-row .col .time
-{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: var(--third-color);
-	font-weight: 600;
-	font-size: 1.1rem;
+.inner-row .col .date, .inner-row .col .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--third-color);
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
-.date i, .time i
-{
-	color: var(--third-color);
-	background: var(--primary-color);
-	font-size: 1.6rem;
-	padding: 8px;
-	border: none;
-	border-radius: 0.3rem;
-	margin: 1rem 0;
+.date i, .time i {
+    color: var(--third-color);
+    background: var(--primary-color);
+    font-size: 1.6rem;
+    padding: 8px;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 1rem 0;
 }
 
-.para-line
-{
-	font-size: 1rem;
-	text-align: center;
-	padding: 1.5rem 0;
+.para-line {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.5rem 0;
 }
 
-.form-area
-{
-	background: #f6f6f6;
-	padding: 1.2rem;
+.form-area {
+    background: #f6f6f6;
+    padding: 1.2rem;
 }
 
-.form-area .form-heading
-{
-	font-size: 1.6rem;
-	font-weight: 500;
-	text-transform: uppercase;
-	text-align: center;
+.form-area .form-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.form-area hr
-{
-	color: #d4d4d4;
-	margin: 20px 0;
+.form-area hr {
+    color: #d4d4d4;
+    margin: 20px 0;
 }
 
-.input-field
-{
-	margin: 1rem 0;
-	padding: 0 0.5rem;
+.input-field {
+    margin: 1rem 0;
+    padding: 0 0.5rem;
 }
 
-.input-field label
-{
-	font-size: 0.9rem;
+/* Timer styles */
+.timer {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: var(--primary-color);
 }
 
-.input-field input
-{
-	width: 100%;
-	background: var(--third-color);
-	border: 1px solid #d4d4d4;
-	font-size: 0.9rem;
-	font-weight: 400;
-	padding: 0.8rem;
+#countdown {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
 }
-/*---------- Header section end ----------*/
+
+#countdown div {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+#registerButton {
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+#registerButton:enabled {
+    cursor: pointer;
+    background: var(--secondary-color);
+}
 
 
 /*---------- Topics section start ----------*/
@@ -666,23 +675,147 @@ img
 	color: white;
 }
 
-.developer-credits {
-	position: absolute;
-	bottom: 20px; /* Adjust spacing from the bottom */
-	right: 20px;  /* Align to the right corner */
-	font-size: 14px; /* Make it slightly smaller */
+
+/* Extras Content Styling */
+.extras-content {
+  position: relative;
+  background: #0b1f4d; /* Navy shade */
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%; /* Ensure full-width background */
+  min-height: 100%; /* Ensure it fills the parent container */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.developer-credits .developer-link {
-	color: #fdbb2d; /* Golden yellow */
-	text-decoration: none;
-	font-weight: bold;
+/* Host Image Styling */
+.extras-content .host-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-.developer-credits .developer-link:hover {
-	text-decoration: underline;
-	color: #ffffff; /* White color on hover */
+/* Headings Styling */
+.extras-content .heading {
+  color: #f1c40f; /* Yellow */
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
 }
 
+/* Tagline Styling */
+.extras-content .tagline {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.extras-content .btn {
+  background-color: #f9980f; /* Single color */
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content; /* Ensure it doesn't stretch unnecessarily */
+  margin: 1rem auto; /* Center the button horizontally */
+}
+
+.extras-content .btn a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.extras-content .btn a:hover {
+  background-color: #d07b0e; /* Slightly darker hover effect */
+}
+
+/* Separator Styling */
+.extras-content .separator {
+  border: 1px solid #f1c40f;
+  width: 60px;
+  margin: 1.5rem 0;
+}
+
+/* Social Media Icons Styling */
+.social-media {
+  display: flex;
+  justify-content: center; /* Align icons in the center */
+  align-items: center; /* Ensure icons are vertically aligned */
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  gap: 1rem; /* Space between icons */
+  margin-top: 1rem;
+}
+
+.social-media a {
+  font-size: 2rem;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #f1c40f;
+}
+
+/* Developer Credits Styling */
+.developer-credits-bottom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: #f1c40f;
+  text-align: right;
+}
+
+.developer-credits-bottom a {
+  color: #f1c40f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.developer-credits-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .extras-content {
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    text-align: center; /* Center-align content */
+    background: #0b1f4d; /* Ensure the background color is consistent */
+  }
+
+  .extras-content .btn {
+    margin: 1rem auto; /* Center-align the button */
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media {
+    justify-content: center; /* Ensure icons are center-aligned */
+    gap: 1rem; /* Keep proper spacing between icons */
+    flex-direction: row; /* Ensure horizontal layout for mobile */
+  }
+
+  .social-media a {
+    font-size: 1.8rem; /* Slightly smaller icons for mobile */
+  }
+
+  .developer-credits-bottom {
+    position: static; /* Adjusted for mobile responsiveness */
+    margin-top: 1rem;
+    text-align: center;
+    color: #f1c40f;
+  }
+}
 	/*----------- Footer section end ------------*/
 }
