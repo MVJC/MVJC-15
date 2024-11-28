@@ -779,6 +779,7 @@ img
     right: 10px; /* Moves it to the right */
     text-align: right; /* Aligns text to the right on desktop */
     font-size: 1rem; /* Slightly larger text */
+    white-space: nowrap; /* Prevent line breaks on desktop */
   }
 
   .extras-content {
