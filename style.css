@@ -684,7 +684,7 @@ img
 .about {
     background: var(--secondary-color);
     padding: 4rem 2rem;
-    text-align: center;
+    text-align: center; /* Default text alignment for larger screens */
 }
 
 .about .heading {
@@ -692,55 +692,31 @@ img
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    text-align: center; /* Centered heading for larger screens */
 }
 
 .about .para-line {
     color: #ffffff;
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    text-align: center; /* Centered paragraph text for larger screens */
 }
 
-.about-features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+/* Mobile view adjustments */
+@media only screen and (max-width: 768px) {
+    .about {
+        text-align: left; /* Left align text on mobile */
+        padding: 2rem 1rem; /* Reduce padding on mobile for better spacing */
+    }
+
+    .about .heading {
+        text-align: left; /* Left align heading on mobile */
+    }
+
+    .about .para-line {
+        text-align: left; /* Left align paragraph text on mobile */
+    }
 }
-
-.feature-item {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-    background: var(--primary-color);
-    border-radius: 10px;
-    padding: 2rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.feature-item i {
-    font-size: 2.5rem;
-    color: var(--third-color);
-    margin-bottom: 1rem;
-}
-
-.feature-item h4 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.feature-item p {
-    color: #dddddd;
-    font-size: 1rem;
-}
-
-
 
 
 /* Extras Content Styling */
