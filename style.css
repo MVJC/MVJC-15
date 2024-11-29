@@ -261,32 +261,59 @@ img
 
 
 /*----------- host section starts ----------*/
-.host-feature
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem 0;
+/*_ _ _ _ _ _ _ Host Section_ _ _ _ _ _ _  */
+.host-feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center alignment for desktop */
+    padding: 1rem 0;
 }
 
-.host-feature i
-{
-	color: var(--third-color);
-	background: var(--primary-color);
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
-	padding: 0.4rem;
-	border: none;
-	border-radius: 5px;
+.host-feature i {
+    color: var(--third-color);
+    background: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 5px;
 }
 
-.host-feature .feature-name
-{
-	font-size: 1.1rem;
-	font-weight: 600;
+.host-feature .feature-name {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
-/*----------- host section ends ----------*/
+
+/* Mobile view adjustments */
+@media only screen and (max-width: 768px) {
+    /* Align host features in the center on mobile */
+    .host-feature {
+        align-items: center; /* Center items (icons and text) */
+        text-align: center;  /* Ensure text is centered */
+    }
+
+    .host-feature i {
+        font-size: 1.5rem; /* Keep icon size consistent for mobile */
+    }
+
+    .host-feature .feature-name {
+        padding-left: 0; /* Adjust padding for mobile */
+        text-align: center; /* Ensure the feature name is centered */
+    }
+
+    /* Adjust the paragraph alignment for mobile view */
+    .host-content-col .para-line {
+        text-align: left; /* Left-align the paragraph on mobile */
+    }
+
+    /* Adjust the heading alignment for mobile view */
+    .host-content-col .heading {
+        text-align: left; /* Left-align the heading (Dr. Rahul Pandey) */
+    }
+}
+/*_ _ _ _ _ _ _ Host Section End _ _ _ _ _ _ _ _*/
+
 
 
 /*----------- Testimonial section start -----------*/
